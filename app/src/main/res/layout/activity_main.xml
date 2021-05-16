@@ -11,7 +11,7 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:gravity="center_horizontal"
-        android:text="Reservation App" />
+        android:text="@string/reservation_app" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name: "
+            android:text="@string/name"
             android:textSize="17sp"
             android:layout_marginLeft="15sp"/>
 
@@ -30,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:hint="Name for Reservation"/>
+            android:hint="@string/name_for_reservation"/>
 
     </LinearLayout>
     <LinearLayout
@@ -41,7 +41,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Number: "
+            android:text="@string/phone_num"
             android:textSize="17sp"
             android:layout_marginLeft="15sp"/>
 
@@ -51,7 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:inputType="number"
-            android:hint="Tel No for Reservation"/>
+            android:hint="@string/tel_no_for_reservation"/>
 
     </LinearLayout>
     <LinearLayout
@@ -62,7 +62,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Number: "
+            android:text="@string/number"
             android:textSize="17sp"
             android:layout_marginLeft="15sp"/>
 
@@ -72,9 +72,73 @@
             android:layout_height="wrap_content"
             android:layout_weight="3"
             android:inputType="number"
-            android:hint="Number of People"/>
+            android:hint="@string/number_of_people"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/CheckboxSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15sp"
+            android:text="@string/smoking_area"/>
+
+        <CheckBox
+            android:id="@+id/CheckboxNSA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/non_smoking_area"
+            android:layout_marginLeft="15sp"/>
 
     </LinearLayout>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="@string/enter_date_and_time"/>
+
+    <TimePicker
+        android:id="@+id/tp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner" />
+    <DatePicker
+        android:id="@+id/dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:datePickerMode="spinner"
+        android:calendarViewShown="false"/>
+    <TextView
+        android:id="@+id/textViewEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45sp"
+            android:text="@string/submit"/>
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/reset"/>
+
+    </LinearLayout>
 
 </LinearLayout>
