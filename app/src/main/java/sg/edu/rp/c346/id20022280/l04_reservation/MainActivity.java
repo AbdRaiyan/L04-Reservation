@@ -62,5 +62,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                name.setText("");
+                phoneNum.setText("");
+                pplNum.setText("");
+                areaS.setChecked(false);
+                areaNS.setChecked(false);
+                display.setText("");
+            }
+        });
+
     }
 }
